@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0;
+
+    >figure {
+        >img {
+            width: 60px;
+            height: 80px;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+    }
+
+    >section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        >div {
+            width: 500px;
+            height: 720px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            >h1 {
+                font-size: 40px;
+                color: #0f2145;
+            }
+
+            >p {
+                font-size: 20px;
+                color: #0f2145;
+                margin-top: 20px;
+            }
+
+            >input {
+                width: 380px;
+                height: 59px;
+                border-radius: 16px;
+                background-color: #edeff2;
+                border: none;
+                margin-top: 20px;
+            }
+
+            ::placeholder {
+                font-size: 18px;
+            }
+
+            >button {
+                &:first-of-type {
+
+                    width: 380px;
+                    height: 59px;
+                    border-radius: 16px;
+                    background-color: #674bf8;
+                    border: none;
+                    color: white;
+                    font-size: 20px;
+                    margin-top: 34px;
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: #4133f9;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    width: 380px;
+                    height: 59px;
+                    border-radius: 16px;
+                    border: none;
+                    color: #4133f9;
+                    font-size: 20px;
+                    background-color: white;
+                    margin-top: 34px;
+                    border: 1px solid rgba(128, 128, 128, 0.421);
+
+                    >svg {
+                        color: #4133f9;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        border: 3px solid #4133f9;
+                    }
+                }
+
+                &:last-of-type {
+                    width: 380px;
+                    height: 59px;
+                    border-radius: 16px;
+                    border: none;
+                    color: #4133f9;
+                    font-size: 20px;
+                    background-color: white;
+                    margin-top: 34px;
+                    border: 1px solid rgba(128, 128, 128, 0.421);
+
+                    >svg {
+                        color: #4133f9;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        border: 3px solid #4133f9;
+
+                    }
+                }
+
+            }
+
+            >a {
+                color: #4133f9;
+                margin-top: 30px;
+                text-decoration: none;
+                font-size: 20px;
+            }
+
+            >div {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                margin-top: 17px;
+
+                >span {
+                    width: 200px;
+                    height: 1px;
+                    display: block;
+                    background-color: #a8a8b1;
+                }
+
+                >p {
+                    font-size: 29px;
+                    color: #a8a8b1;
+                }
+            }
+
+            >span {
+                width: 440px;
+                height: 1px;
+                display: block;
+                background-color: #a8a8b1;
+                margin-top: 20px;
+            }
+
+            >p {
+                color: #808083;
+                font-size: 15px;
+                font-weight: 900;
+                text-align: center;
+            }
+        }
+    }
+
+
+    >footer {
+        margin-top: 30px;
+        width: 100%;
+        height: 13vh;
+        padding: 0 30px;
+        border-top: 1px solid #59667f;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        >div {
+
+            >p {
+                color: #59667f;
+            }
+        }
+
+        >nav {
+            >ul {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+
+                >li {
+                    color: #5E6A83;
+
+                    >a {
+                        text-decoration: none;
+                        color: #5E6A83;
+                    }
+                }
+            }
+        }
+    }
+}
